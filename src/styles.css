@@ -1,0 +1,95 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0f1117;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#ui-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.panel {
+  background: rgba(10, 14, 20, 0.78);
+  border: 1px solid rgba(121, 152, 255, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.select-panel {
+  pointer-events: auto;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 320px;
+  padding: 16px;
+}
+
+.select-panel h1 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.car-btn {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #4b72ff;
+  color: white;
+  background: #20316f;
+  cursor: pointer;
+  text-align: left;
+}
+
+.car-btn:hover {
+  background: #2a4090;
+}
+
+.hud {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 280px;
+  padding: 12px;
+  color: #d8e0ff;
+}
+
+.meter {
+  margin: 8px 0;
+}
+
+.meter-bar {
+  height: 10px;
+  background: #2b3250;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3ec8ff, #5376ff);
+  width: 0;
+}
+
+.status {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 280px;
+  padding: 12px;
+  color: #d8e0ff;
+}

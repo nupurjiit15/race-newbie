@@ -1,0 +1,9 @@
+{
+  "name": "race-newbie",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Zero-dependency browser racing game. npm install is not required.",
+  "scripts": {
+    "serve": "python3 -m http.server 8000"
+  }
+}
